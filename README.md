@@ -1,2 +1,3 @@
-# monochromacy
-Website untuk mendeteksi warna berdasarkan input dari kamera maupun file. Website kami juga menyediakan fitur untuk tes buta warna
+# DTS FULLSTACK RUBY KELOMPOK A19
+Anggota Kelompok:  
+1. Abdurikho Min Khoiri  
