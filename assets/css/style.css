@@ -1,0 +1,106 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+}
+
+body {
+      background-color: whitesmoke;
+}
+
+.navbar {
+      width: 100%;
+      height: 80px;
+      background-color: #0082e6;
+      position: fixed;
+      z-index: 10;
+}
+
+.navbar-logo {
+      float: left;
+      color: white;
+      font-size: 35px;
+      font-weight: bold;
+      line-height: 80px;
+      margin-left: 100px;
+}
+
+.navbar-list {
+      float: right;
+      margin-right: 100px;
+}
+
+.navbar-list li {
+      display: inline-block;
+      line-height: 80px;
+      margin: 0 8px;
+}
+
+.item-list {
+      color: white;
+      text-decoration: none;
+      font-size: 17px;
+      padding: 7px 13px;
+      text-transform: uppercase;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: all ease-in .5s;
+}
+
+.active,
+.item-list:hover {
+      color: #0082e6;
+      background-color: white;
+}
+
+.navbar-button {
+      float: right;
+      line-height: 80px;
+      margin-right: 50px;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+      display: none;
+      transition: .5s;
+}
+
+@media screen and (max-width: 925px) {
+      .navbar-logo {
+            margin-left: 50px;
+      }
+
+      .navbar-list {
+            position: fixed;
+            width: 100%;
+            height: max-content;
+            background: #02518d;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+      }
+
+      .navbar-list li {
+            display: block;
+      }
+
+      .navbar-button {
+            display: block;
+      }
+}
+
+@media screen and (max-width: 325px) {
+      .navbar-logo {
+            display: none;
+      }
+
+      .navbar-button {
+            float: left;
+            margin-left: 30px;
+            margin-right: 0;
+      }
+}
