@@ -79,10 +79,11 @@ body {
 }
 
 .main {
-      height: 100vh;
+      height: 560px;
       background-image: url('../img/main-background.jpg');
       background-size: cover;
       background-repeat: no-repeat;
+      background-attachment: fixed;
       color: white;
 }
 
