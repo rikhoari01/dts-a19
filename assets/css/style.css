@@ -6,6 +6,11 @@
       padding: 0;
       box-sizing: border-box;
       font-family: "Poppins", sans-serif;
+      text-decoration: none;
+}
+
+html {
+      scroll-behavior: smooth;
 }
 
 body {
@@ -69,6 +74,55 @@ body {
       transition: .5s;
 }
 
+.content {
+      padding-top: 80px;
+}
+
+.main {
+      height: 560px;
+      background-image: url('../img/main-background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white;
+}
+
+.main-overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.main-content {
+      width: 60%;
+      text-align: center;
+}
+
+.btn {
+      padding: 15px 20px;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      display: inline-block;
+}
+
+.btn-team {
+      background-color: #009953;
+      transition: all 0.3s;
+      margin-top: 20px;
+}
+
+.btn-team:hover {
+      background-color: #008842;
+}
+
+.our-team-wrapper {
+      height: 500px;
+      background-color: #f7f7f7;
+}
+
 @media screen and (max-width: 925px) {
       .navbar-logo {
             margin-left: 50px;
@@ -91,6 +145,15 @@ body {
 
       .navbar-button {
             display: block;
+      }
+
+      .main {
+            height: 460px;
+            background-position: center;
+      }
+
+      .main-content {
+            width: 90%;
       }
 }
 

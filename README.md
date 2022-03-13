@@ -1,3 +1,4 @@
 # DTS FULLSTACK RUBY KELOMPOK A19
 Anggota Kelompok:  
-1. Abdurikho Min Khoiri  
+1. Abdurikho Min Khoiri
+2. Cokorda Gede Tresna Jaya
