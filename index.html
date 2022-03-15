@@ -4,56 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>TIM A19 | DTS FULLSTACK RUBY 2022</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <div class="header">
+    <!-- ABDURIKHO MIN KHOIRI -->
+    <header>
       <nav class="navbar">
         <div class="navbar-logo">TIM A19</div>
-        <div onclick="navbarOpen()" class="navbar-button">
-              <i id="navBtn" class="fa fa-bars"></i>
+        <div class="navbar-button">
+          <i id="navBtn" class="fa fa-bars"></i>
         </div>
-        <ul id="navbar-list" style="left: -100%;" class="navbar-list">
+        <ul id="navbar-list" style="left: -100%" class="navbar-list">
           <li>
-            <a href="#" class="item-list active">Menu 1</a>
+            <a href="#" id="menu1" class="item-list active"
+              ><i class="fa fa-home"></i> Beranda</a
+            >
           </li>
           <li>
-            <a href="#" class="item-list">Menu 2</a>
+            <a href="#about" id="menu2" class="item-list"
+              ><i class="fa fa-users"></i> Tentang Kami</a
+            >
           </li>
           <li>
-            <a href="#" class="item-list">Menu 3</a>
+            <a href="#" id="menu3" class="item-list"
+              ><i class="fa fa-newspaper"></i> Blog</a
+            >
           </li>
           <li>
-            <a href="#" class="item-list">Menu 4</a>
-          </li>
-          <li>
-            <a href="#" class="item-list">Menu 5</a>
+            <a href="#contact" id="menu4" class="item-list"
+              ><i class="fa fa-phone"></i> Kontak</a
+            >
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
+
     <div class="content">
+      <!-- COKORDA GEDE TRESNA JAYA -->
       <div class="main">
         <div class="main-overlay">
           <div class="main-content">
             <h1>Welcome to Tim A19 Digital Talent Scholarship 2022 Website</h1>
-            <a href="#our-team-wrapper" class="btn btn-team">Our Team Member</a>
+            <a href="#about" class="btn btn-team">Our Team Member</a>
           </div>
         </div>
       </div>
+
       <div class="body">
-        <div id="our-team-wrapper">
-          <div class="container">
-            <div class="heading">
-              <h1>Kelompok A19</h1>
-            </div>
-            <div class="row">
-              <!--Cards  User 1-->
-              <div class="card">
+        <!-- Arya Gesha Pamangkit -->
+        <div id="about" class="about">
+          <h2 class="section-title">Our Team</h2>
+          <div class="row">
+            <!--Cards  User 1-->
+            <div class="card">
                 <div class="card-header">
                   <a href="#">
                     <img class="image-resize" src="assets/img/user.png" alt="">
@@ -65,9 +72,9 @@
                   </p>
                   <a href="#" class="btn">Read more</a>
                 </div>
-              </div>
-              <!-- Cards  User 2-->
-              <div class="card">
+            </div>
+            <!-- Cards  User 2-->
+            <div class="card">
                 <div class="card-header">
                   <a href="#">
                     <img class="image-resize" src="assets/img/user.png" alt="">
@@ -79,9 +86,9 @@
                   </p>
                   <a href="#" class="btn">Read more</a>
                 </div>
-              </div>
-              <!--  Cards  User 3-->
-              <div class="card">
+            </div>
+            <!--  Cards  User 3-->
+            <div class="card">
                 <div class="card-header">
                   <a href="#">
                     <img class="image-resize" src="assets/img/user.png" alt="">
@@ -93,9 +100,9 @@
                   </p>
                   <a href="#" class="btn">Read more</a>
                 </div>
-              </div>
-              <!--  Cards  User 4-->
-              <div class="card">
+            </div>
+            <!--  Cards  User 4-->
+            <div class="card">
                 <div class="card-header">
                   <a href="#">
                     <img class="image-resize" src="assets/img/user.png" alt="">
@@ -107,9 +114,9 @@
                   </p>
                   <a href="#" class="btn">Read more</a>
                 </div>
-              </div>
-              <!--  Cards  User 5-->
-              <div class="card">
+            </div>
+            <!--  Cards  User 5-->
+            <div class="card">
                 <div class="card-header">
                   <a href="#">
                     <img class="image-resize" src="assets/img/user.png" alt="">
@@ -121,16 +128,44 @@
                   </p>
                   <a href="#" class="btn">Read more</a>
                 </div>
-              </div>
             </div>
+          </div>  
+        </div>
+
+        <!-- ALFIAN DWI CAHYO -->
+        <div id="contact" class="contact">
+          <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <form action="">
+              <label for="fname">Nama Awal</label>
+              <input type="text" id="fname" name="firstname" placeholder="Nama Awal Anda..">
+          
+              <label for="lname">Nama Akhir</label>
+              <input type="text" id="lname" name="lastname" placeholder="Nama Akhir Anda..">
+          
+              <label for="country">Negara</label>
+              <select id="country" name="country">
+                <option value="indonesia">Indonesia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Tulis Sesuatu.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+            </form>
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Fajar Izdiharuddin Prakasa -->
     <footer>
-        <div class="row konten-footer">
+        <div class="konten-footer">
             <div class="left-konten">
                 <div style="display:block;">
-                    <h1>Kelompok:</h1>
+                    <h3>Kelompok:</h3>
                     <p>Abdurikho Min Khoiri</p>
                     <p>Cokorda Gede Tresna Jaya</p>
                     <p>Fajar Izdiharuddin Prakasa</p>
@@ -138,12 +173,14 @@
                     <p>Alfian Dwi Cahyo</p>
                 </div>
             </div>
-            <div class="middle-konten">
-              <div class="navbar-logo" style="margin-left:0px !important; color: blue !important; float:none !important;">TIM A19</div>
-            </div>
             <div class="right-konten">
               <img src="assets/img/progate.png">
+              <img src="assets/img/digitalent-logo.png">
             </div>
+        </div>
+
+        <div class="copy-text">
+          <p>&copy Copyright 2022 Tim A19. All Rights Reserved</p>
         </div>
     </footer>
   <script src="assets/js/script.js"></script>
